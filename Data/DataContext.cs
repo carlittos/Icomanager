@@ -1,3 +1,4 @@
+using Icomanger.API.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Icomanger.API.Data
@@ -6,8 +7,8 @@ namespace Icomanger.API.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) {}
 
+        public DbSet<User> Users {get; set;}
 
 
-        
     }
 }
